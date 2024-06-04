@@ -3,7 +3,6 @@ import React from "react";
 // animation
 import { motion } from "framer-motion";
 import { fadeIn } from "../Config/varients";
-import Image from 'next/image'
 
 const HeroSection = () => {
   return (
@@ -40,7 +39,7 @@ const HeroSection = () => {
                className="btn text-white bg-black px-3 py-3 h-[60px] w-[180px] text-lg flex justify-center items-center rounded-md mr-5">
                 Get Started{" "}
                 <span>
-                  <Image src="/arrow-right.png" loading="lazy" decoding="async" alt="" className="ml-3" />
+                  <img src="/arrow-right.png" loading="lazy" decoding="async" alt="" className="ml-3" />
                 </span>
               </motion.button>
               <motion.button
@@ -50,7 +49,7 @@ const HeroSection = () => {
               viewport={{ once: true }}
                className="btn text-black  px-3 py-3 h-[60px] w-[180px] text-lg flex justify-center items-center rounded-md">
                 <span>
-                  <Image src="/video-icon.png" loading="lazy" decoding="async" alt="" className="mr-3" />
+                  <img src="/video-icon.png" loading="lazy" decoding="async" alt="" className="mr-3" />
                 </span>
                 Watch Video
               </motion.button>
@@ -61,7 +60,7 @@ const HeroSection = () => {
               whileInView={"show"}
               viewport={{ once: true }}
              className="w-full">
-              <Image src="/hero-2.png" loading="lazy" decoding="async" alt="" />
+              <img src="/hero-2.png" loading="lazy" decoding="async" alt="" />
             </motion.div>
             <motion.div
              variants={fadeIn("up", 0.5, 1)}
@@ -69,7 +68,7 @@ const HeroSection = () => {
               whileInView={"show"}
               viewport={{ once: true }}
              className="shape absolute left-0 top-[-100px] -z-[1]">
-              <Image src="shape-1.png" loading="lazy" decoding="async" alt="" />
+              <img src="shape-1.png" loading="lazy" decoding="async" alt="" />
             </motion.div>
            </div>
           </div>
@@ -81,25 +80,25 @@ const HeroSection = () => {
               viewport={{ once: true }}
               className="relative h-full"
             >
-              <Image
+              <img
                 src="/iphone-13-Pro-Front-2.png"
                 alt=""
                 loading="lazy" decoding="async"
                 className="absolute z-[100] left-0 top-[-100px]"
               />
-              <Image
+              <img
                 src="/iphone-13-Pro-Front-1.png"
                 alt=""
                 loading="lazy" decoding="async"
                 className="absolute z-[99] left-[120px] top-[-15px]"
               />
-              <Image
+              <img
                 src="/iphone-13-Pro-Front.png"
                 alt=""
                 loading="lazy" decoding="async"
                 className="absolute z-[98] left-[240px] top-[50px]"
               />
-              <Image
+              <img
                 src="/shape-3.png"
                 alt=""
                 loading="lazy" decoding="async"

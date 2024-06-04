@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from 'next/image'
 
 export const Features = () => {
   return (
@@ -8,8 +7,8 @@ export const Features = () => {
             <div className="wrapper flex-col lg:flex-row flex items-center">
                 <div className='relative w-full lg:w-1/2'>
                  <div className="relative">
-                 <Image src="/feature-banner.png" alt="" />
-                 <Image src="/shape-1.png" alt="" className='absolute -z-[1] left-0 top-0' />
+                 <img src="/feature-banner.png" alt="" />
+                 <img src="/shape-1.png" alt="" className='absolute -z-[1] left-0 top-0' />
                  </div>
                 </div>
                 <div className='w-full lg:w-1/2'>

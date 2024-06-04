@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { CgClose, CgMenu } from "react-icons/cg";
 import { motion } from "framer-motion";
 import { fadeIn } from "../Config/varients";
-import Image from 'next/image'
+
 
 export const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
@@ -44,7 +44,7 @@ export const Navbar = () => {
             className="logo"
           >
             <Link href="/">
-              <Image src="/logo.png" alt="logo" className="h-[35px] max-w-none" />
+              <img src="/logo.png" alt="logo" className="h-[35px] max-w-none" />
             </Link>
           </motion.div>
 
@@ -52,7 +52,7 @@ export const Navbar = () => {
           <div className="nav-items flex w-full">
           <div className="logo px-3">
            <Link href="/">
-              <Image src="/logo.png" alt="logo" className="h-[35px] max-w-none" />
+              <img src="/logo.png" alt="logo" className="h-[35px] max-w-none" />
             </Link>
             <CgClose
               name="menu-outline"
