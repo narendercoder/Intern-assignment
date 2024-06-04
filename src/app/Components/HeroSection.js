@@ -60,7 +60,7 @@ const HeroSection = () => {
               whileInView={"show"}
               viewport={{ once: true }}
              className="w-full">
-              <img src="/hero-2.png" loading="lazy" decoding="async" alt="" />
+              <img src="/hero-2.png" alt="" />
             </motion.div>
             <motion.div
              variants={fadeIn("up", 0.5, 1)}
@@ -68,7 +68,7 @@ const HeroSection = () => {
               whileInView={"show"}
               viewport={{ once: true }}
              className="shape absolute left-0 top-[-100px] -z-[1]">
-              <img src="shape-1.png" loading="lazy" decoding="async" alt="" />
+              <img src="shape-1.png" alt="" />
             </motion.div>
            </div>
           </div>
@@ -82,26 +82,22 @@ const HeroSection = () => {
             >
               <img
                 src="/iphone-13-Pro-Front-2.png"
-                alt=""
-                loading="lazy" decoding="async"
+                alt="iphone"
                 className="absolute z-[100] left-0 top-[-100px]"
               />
               <img
                 src="/iphone-13-Pro-Front-1.png"
-                alt=""
-                loading="lazy" decoding="async"
+                alt="iphone"
                 className="absolute z-[99] left-[120px] top-[-15px]"
               />
               <img
                 src="/iphone-13-Pro-Front.png"
-                alt=""
-                loading="lazy" decoding="async"
+                alt="iphone"
                 className="absolute z-[98] left-[240px] top-[50px]"
               />
               <img
                 src="/shape-3.png"
                 alt=""
-                loading="lazy" decoding="async"
                 className="absolute z-[97] left-[80px] top-[-100px]"
               />
             </motion.div>
