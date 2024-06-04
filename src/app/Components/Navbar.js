@@ -64,7 +64,7 @@ export const Navbar = () => {
               {navitems.map((item, index) => {
                 return (
                   <motion.li
-                    id="item.id"
+                    key="item.id"
                     variants={fadeIn("up", 0.1*(index+2), 1)}
                     initial="hidden"
                     whileInView={"show"}
