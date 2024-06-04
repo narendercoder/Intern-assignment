@@ -2,32 +2,123 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  width: 100vw;
+  overflow-x: hidden;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media (min-width: 576px) {
+  .custom-container {
+    max-width: 100%;
   }
 }
+
+@media (min-width: 768px) {
+  .custom-container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .custom-container {
+    max-width: 960px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .custom-container {
+    max-width: 1185px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .custom-container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+
+.navbar-link {
+  position: relative;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  color: black;
+  padding: 0rem 0.75rem;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+}
+
+.navbar-link:link,
+.navbar-link:visited {
+  font-size: 1rem;
+}
+
+.navbar-link:hover,
+.navbar-link:active,
+.navbar-link.active {
+  color: #FF5555;
+
+}
+
+.nav-items .logo{
+  display: none;
+}
+.mobile-navbar {
+  display: none;
+}
+
+@media (max-width: 980px) {
+  .mobile-navbar{
+    display: flex;
+  }
+  .navbar-items {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+    right: 0px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  .navbar.active .nav-lists {
+    flex-direction: column;
+  }
+
+  .nav-lists li {
+    padding: 1.5rem 0px;
+  }
+
+  .navbar.active .navbar-items {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0px);
+    z-index: 999;
+    transform-origin: right center;
+  }
+  
+  .navbar.active .logo {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 15px 30px 13px;;
+  }
+  .nav-items{
+    flex-direction: column;
+  }
+
+}
+
+
+
