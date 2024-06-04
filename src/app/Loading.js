@@ -1,9 +1,10 @@
 import React from 'react'
+import Image from 'next/image'
 
 const Loading = () => {
   return (
     <div className='w-screen h-screen overflow-hidden flex justify-center items-center bg-white'>
-      <img src="/loading.svg" alt="" />
+      <Image src="/loading.svg" alt="" />
     </div>
   )
 }
