@@ -39,7 +39,7 @@ const HeroSection = () => {
                className="btn text-white bg-black px-3 py-3 h-[60px] w-[180px] text-lg flex justify-center items-center rounded-md mr-5">
                 Get Started{" "}
                 <span>
-                  <img src="/arrow-right.png" loading="lazy" decoding="async" alt="" className="ml-3" />
+                  <img src="arrow-right.png" loading="lazy" decoding="async" alt="" className="ml-3" />
                 </span>
               </motion.button>
               <motion.button
@@ -49,7 +49,7 @@ const HeroSection = () => {
               viewport={{ once: true }}
                className="btn text-black  px-3 py-3 h-[60px] w-[180px] text-lg flex justify-center items-center rounded-md">
                 <span>
-                  <img src="/video-icon.png" loading="lazy" decoding="async" alt="" className="mr-3" />
+                  <img src="video-icon.png" loading="lazy" decoding="async" alt="" className="mr-3" />
                 </span>
                 Watch Video
               </motion.button>
@@ -60,7 +60,7 @@ const HeroSection = () => {
               whileInView={"show"}
               viewport={{ once: true }}
              className="w-full">
-              <img src="/hero-2.png" alt="" />
+              <img src="hero-2.png" alt="" />
             </motion.div>
             <motion.div
              variants={fadeIn("up", 0.5, 1)}
@@ -81,22 +81,22 @@ const HeroSection = () => {
               className="relative h-full"
             >
               <img
-                src="/iphone-13-Pro-Front-2.png"
+                src="iphone-13-Pro-Front-2.png"
                 alt="iphone"
                 className="absolute z-[100] left-0 top-[-100px]"
               />
               <img
-                src="/iphone-13-Pro-Front-1.png"
+                src="iphone-13-Pro-Front-1.png"
                 alt="iphone"
                 className="absolute z-[99] left-[120px] top-[-15px]"
               />
               <img
-                src="/iphone-13-Pro-Front.png"
+                src="iphone-13-Pro-Front.png"
                 alt="iphone"
                 className="absolute z-[98] left-[240px] top-[50px]"
               />
               <img
-                src="/shape-3.png"
+                src="shape-3.png"
                 alt=""
                 className="absolute z-[97] left-[80px] top-[-100px]"
               />

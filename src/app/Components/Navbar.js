@@ -44,7 +44,7 @@ export const Navbar = () => {
             className="logo"
           >
             <Link href="/">
-              <img src="/logo.png" alt="logo" className="h-[35px] max-w-none" />
+              <img src="logo.png" alt="logo" className="h-[35px] max-w-none" />
             </Link>
           </motion.div>
 
@@ -52,7 +52,7 @@ export const Navbar = () => {
           <div className="nav-items flex w-full">
           <div className="logo px-3">
            <Link href="/">
-              <img src="/logo.png" alt="logo" className="h-[35px] max-w-none" />
+              <img src="logo.png" alt="logo" className="h-[35px] max-w-none" />
             </Link>
             <CgClose
               name="menu-outline"
