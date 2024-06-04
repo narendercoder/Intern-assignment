@@ -81,17 +81,17 @@ const HeroSection = () => {
               className="relative h-full"
             >
               <img
-                src="iphone-13-Pro-Front-2.png"
+                src="iphone-pro-2.png"
                 alt="iphone"
                 className="absolute z-[100] left-0 top-[-100px]"
               />
               <img
-                src="iphone-13-Pro-Front-1.png"
+                src="iphone-pro-1.png"
                 alt="iphone"
                 className="absolute z-[99] left-[120px] top-[-15px]"
               />
               <img
-                src="iphone-13-Pro-Front.png"
+                src="iphone-pro.png"
                 alt="iphone"
                 className="absolute z-[98] left-[240px] top-[50px]"
               />
